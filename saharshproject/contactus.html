@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/styles.css"> <!-- Link to external stylesheet -->
+  <title>Harley Davidson Store</title>
+  <style>
+    /* Add your CSS styles here if needed */
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="logo">
+        <img src="./img/504294-Harley-Davidson.png" alt="Bike Sale Logo">
+        Harley Davidson Store
+      </a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Product.html">Bikes</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="contactus.html">Contact</a></li>
+      </ul>
+    </nav>
+    <br>
+    <div class="welcome">
+      <h2>Welcome to Harley-Davidson Store!</h2>
+      <p>CONTACT US</p>
+    </div>
+  </header>
+  
+  <!-- Contact Form Container -->
+  <div class="contact-form-container">
+    <div class="contact-form">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mobile">Mobile Number:</label>
+        <input type="tel" id="mobile" name="mobile" maxlength="10" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <!-- Button for booking -->
+        <button type="button" id="book">Book Now</button>
+        
+        <!-- Submit button for sending the message -->
+        <button type="button" id="submitButton">Submit</button>
+      </form>
+    </div>
+  </div>
+  
+  <!-- JavaScript to handle form submission and actions -->
+  <script>
+    // Handle form submission for general contact
+    document.getElementById("submitButton").addEventListener("click", function() {
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const mobile = document.getElementById("mobile").value;
+
+      if (name === "" || email === "" || mobile === "") {
+        alert("Please complete the form before submitting.");
+      } else {
+        alert("Thank you for contacting us! We will contact you shortly.");
+        window.location.assign('index.html'); // Redirect after submission
+      } 
+    });
+
+    // Handle form submission for booking
+    document.getElementById("book").addEventListener("click", function(){
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const mobile = document.getElementById("mobile").value;
+      
+      if (name === "" || email === "" || mobile === "") {
+        alert("Please complete the form before submitting.");
+      } else {
+        alert("Thank you for booking! We will share the meeting details shortly through email.");
+        window.location.assign('Product.html'); // Redirect after submission
+      } 
+    });
+  </script>
+
+  <footer>
+    <p>&copy; 2023 Harley Davidson Store </p>
+  </footer>
+</body>
+</html>

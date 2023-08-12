@@ -1,0 +1,258 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('bgimg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Header and footer styles */
+header, footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+
+/* Navigation styles */
+nav {
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+}
+
+/* Styles for the welcome section */
+.welcome {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 2em;
+  text-align: center;
+}
+
+/* Logo styles */
+.logo {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+/* Logo image styles */
+.logo img {
+  width: 110px;
+  height: auto;
+  margin-right: 10px;
+}
+
+/* Navigation list styles */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+/* Navigation link styles */
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+/* Main container styles */
+.main-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+/* Slider container styles */
+.slider-container {
+  background-color: rgb(90, 87, 87, 0.9);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Slide image styles */
+.slide img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* View container styles */
+.view-container {
+  background-color: rgb(90, 87, 87, 0.9);
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* View button styles */
+.view-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Slide styles */
+.slide {
+  flex: 0 0 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Product page container styles */
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+/* Styling for individual products */
+.product {
+  background-color: rgb(90, 87, 87, 0.9);
+  flex: 1;
+  border: 1px solid #ccc;
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  max-width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Product image styles */
+.product-image {
+  flex: 1;
+  margin-right: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Product image hover effect styles */
+.product-image img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Product details styles */
+.product-details {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Product title styles */
+.product-details h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Product description styles */
+.product-description {
+  margin-bottom: 15px;
+}
+
+/* Product price styles */
+.product-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #e74c3c;
+  text-align: center;
+  text-shadow: -1px -1px 0 rgb(0, 0, 0), 1px -1px 0 rgb(0, 0, 0), -1px 1px 0 rgb(0, 0, 0), 1px 1px 0 rgb(0, 0, 0);
+}
+
+/* Add to cart button styles */
+.add-to-cart-button {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  display: flex;
+  justify-content: center;
+}
+
+/* Add to cart button hover effect styles */
+.add-to-cart-button:hover {
+  background-color: #2980b9;
+}
+  /*designing the contact us page*/
+  .contact-form {
+    background-color:rgb(90, 87, 87,0.9); /* Light gray background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+  
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+
+
+.contact-form textarea {
+  max-width: 3000px; /* Set a maximum width for the input and textarea */
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; 
+}
+.contact-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+.contact-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.about-section {
+  background-color: rgb(90, 87, 87,0.9); /* White background with slight transparency */
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.explore-button {
+  margin-top: 1.5rem;
+  text-align: center; /* Center align button */
+}
